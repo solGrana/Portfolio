@@ -27,4 +27,4 @@
 - **Código fuente**: [Ver en GitHub](https://github.com/tu-usuario-github/aplicacion-torneos)
 
 ## Contacto
-Puedes encontrarme en [GitHub](https://github.com/solGrana) y [LinkedIn](https://in/maria-sol-graña).
+Podes encontrarme en [GitHub](https://github.com/solGrana) y [LinkedIn](https://in/maria-sol-graña).
