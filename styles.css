@@ -129,14 +129,16 @@ header p {
 
 /* Limitar el tamaño de la descripción y agregar botón "Ver más" */
 .description {
-    max-height: 200px;
-    /* Limita la altura visible de la descripción */
+    max-height: 200px;/* Limita la altura visible de la descripción */
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+
 }
 
 .expanded .description {
     max-height: 400px; /* Incrementa la altura para mostrar el texto completo */
+    opacity: 1;
 }
 
 /* Estilo del botón "Ver más" */

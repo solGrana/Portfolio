@@ -73,9 +73,7 @@
 
             <!-- Proyecto 2: Test -->
             <div class="card">
-                <img class="image-pc"
-                    src="images/testing.png"
-                    alt="Imagen de Mantisnet Cooking">
+                <img class="image-pc" src="images/testing.png" alt="Imagen de Mantisnet Cooking">
                 <img class="image-mobile" src="images/webCooking-mobile.png" alt="Imagen de Mantisnet Cooking - Móvil"
                     style="display: none;">
                 <div class="card-content">
@@ -102,11 +100,14 @@
                 </div>
             </div>
 
-            <!-- Proyecto 3: Aplicación de Torneos -->
+            <!-- Proyecto 3: Gestion de torneos -->
             <div class="card">
-                <img src="https://m.xporty.com/images/landing/futbol_3.png" alt="Imagen de la Aplicación de Torneos">
+                <img class="image-pc" src="https://m.xporty.com/images/landing/futbol_3.png"
+                    alt="Imagen de Mantisnet Cooking">
+                <img class="image-mobile" src="images/webCooking-mobile.png" alt="Imagen de Mantisnet Cooking - Móvil"
+                    style="display: none;">
                 <div class="card-content">
-                    <h3>Aplicación Gestion de Torneos</h3>
+                    <h3>Gestion de torneos</h3>
                     <p class="description">
                         Esta aplicación permite gestionar torneos de fútbol, facilitando la organización de equipos,
                         partidos y resultados.
@@ -127,15 +128,15 @@
                                 <li>Flask</li>
                                 <li>PostgreSQL</li>
                                 <li>React</li>
+                                <li>Cloudinary</li>
                             </ul>
-
                             <strong>Demo:</strong>
-                            Podes ver la aplicación en <a href="https://link-a-la-aplicacion-de-torneos"
+                            Podes ver la web funcionando en <a href="https://mantisnet-cooking-1.onrender.com/"
                                 target="_blank">Aplicación Gestion de Torneos</a>
                         </span>
                     </div>
                     </p>
-                    <a href="https://github.com/tu-usuario-github/aplicacion-torneos" target="_blank">Ver en GitHub</a>
+                    <a href="https://github.com/solGrana/Mantisnet-Cooking.git" target="_blank">Ver en GitHub</a>
                     <button class="ver-mas-btn" onclick="toggleDescription(this)">Ver más</button>
                 </div>
             </div>
@@ -163,6 +164,24 @@
                 imagePC.style.display = 'none'; // Oculta la imagen de PC
                 imageMobile.style.display = 'block'; // Muestra la imagen móvil
 
+                // Centra la tarjeta en la pantalla
+                const cardRect = card.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+
+                // Calcula la posición de scroll
+                const scrollTo = cardRect.top + window.scrollY - (windowHeight / 2) + (cardRect.height / 2);
+
+                // Asegurar de que el desplazamiento no sea menor que 0
+                const maxScroll = document.documentElement.scrollHeight - windowHeight;
+
+                // Si estamos cerca del final de la página, que no se salga del viewport
+                const finalScrollPosition = Math.min(scrollTo, maxScroll);
+                window.scrollTo({ top: finalScrollPosition, behavior: 'smooth' });
+
+                // Verificar si hay espacio suficiente para centrarse
+                if (scrollTo > maxScroll) {
+                    window.scrollTo({ top: maxScroll, behavior: 'smooth' });
+                }
             } else {
                 moreText.style.display = 'none'; // Oculta el texto adicional
                 button.textContent = 'Ver más';
@@ -172,4 +191,5 @@
         }
     </script>
 </body>
+
 </html>
