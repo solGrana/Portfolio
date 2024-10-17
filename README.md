@@ -1,4 +1,4 @@
-# Portafolio de María Sol Graña
+# Portafolio
 
 ¡Hola! Soy Sol Graña, estudiante de Sistemas Informáticos en la UTN. Me apasiona la programación y el diseño de aplicaciones web. Este es mi portafolio donde muestro algunos de mis proyectos.
 
@@ -27,4 +27,4 @@
 - **Código fuente**: [Ver en GitHub](https://github.com/tu-usuario-github/aplicacion-torneos)
 
 ## Contacto
-Puedes encontrarme en [GitHub](https://github.com/solGrana) y [LinkedIn](https://in/maria-sol-graña).
+Podes encontrarme en [GitHub](https://github.com/solGrana) y [LinkedIn](https://in/maria-sol-graña).
