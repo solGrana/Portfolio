@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de María Sol Graña</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sección Sobre mí -->
+    <header>
+        <h1>María Sol Graña</h1>
+        <p>Estudiante de Sistemas Informáticos en la UTN, Me apasiona la programación y el diseño de aplicaciones web.
+            <br>
+            Aca podes ver algunos de mis proyectos.
+        </p>
+        <br><br>
+        <div class="contacto">
+            <a href="https://github.com/solGrana" target="_blank">GitHub</a>
+            <a href="https://in/maria-sol-graña" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <!-- Sección Proyectos -->
+    <section class="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos-container">
+
+            <!-- Proyecto 1: Mantisnet Cooking -->
+            <div class="card">
+                <img class="image-pc" src="images/webCooking.png" alt="Imagen de Mantisnet Cooking">
+                <img class="image-mobile" src="images/webCooking-mobile.png" alt="Imagen de Mantisnet Cooking - Móvil"
+                    style="display: none;">
+                <div class="card-content">
+                    <h3>Mantisnet Cooking</h3>
+                    <p class="description">
+                        Mantisnet Cooking es una aplicación web de recetas que permite a los usuarios visualizar
+                        recetas,
+                        y a los administradores agregarlas, editarlas y eliminarlas, con soporte para subir imágenes.
+                    <div class="more-text" style="display: none;">
+                        <span>
+                            Utiliza una base de datos PostgreSQL en Supabase y Cloudinary para la gestión de imágenes.
+                            <br><br>
+                            <strong>Características:</strong>
+                            <ul>
+                                <li>Visualización y gestión de recetas.</li>
+                                <li>Autenticación de administradores.</li>
+                                <li>Carga de imágenes de forma eficiente.</li>
+                            </ul>
+                            <strong>Tecnologías utilizadas:</strong>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>PostgreSQL</li>
+                                <li>Supabase</li>
+                                <li>Multer</li>
+                                <li>Cloudinary</li>
+                            </ul>
+                            <strong>Demo:</strong>
+                            Podes ver la web funcionando en <a href="https://mantisnet-cooking-1.onrender.com/"
+                                target="_blank">Mantisnet
+                                Cooking</a>
+                        </span>
+                    </div>
+                    </p>
+                    <a href="https://github.com/solGrana/Mantisnet-Cooking.git" target="_blank">Ver en GitHub</a>
+                    <button class="ver-mas-btn" onclick="toggleDescription(this)">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: Test -->
+            <div class="card">
+                <img class="image-pc"
+                    src="images/testing.png"
+                    alt="Imagen de Mantisnet Cooking">
+                <img class="image-mobile" src="images/webCooking-mobile.png" alt="Imagen de Mantisnet Cooking - Móvil"
+                    style="display: none;">
+                <div class="card-content">
+                    <h3>Test</h3>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad rerum amet reprehenderit
+                        cupiditate earum aut,
+                        repellat distinctio error id dignissimos laudantium nemo soluta magnam ea corrupti ab ullam sit?
+                    <div class="more-text" style="display: none;">
+                        <span>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quo voluptates, eveniet a
+                            vitae reprehenderit,
+                            fugit cum deserunt officia quod eum sit aliquid est quae voluptatibus, quia dolore sequi
+                            reiciendis.
+                            Lorm ipsum dolor sit amet consectetur adipisicing elit. Esse dolore iusto ullam dolorum
+                            natus quis aperiam,
+                            harum vel temporibus, nesciunt officiis in corporis dicta reiciendis doloribus
+                            exercitationem voluptatibus, ad quisquam.
+                        </span>
+                    </div>
+                    </p>
+                    <a href="https://github.com/solGrana/Mantisnet-Cooking.git" target="_blank">Ver en GitHub</a>
+                    <button class="ver-mas-btn" onclick="toggleDescription(this)">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: Aplicación de Torneos -->
+            <div class="card">
+                <img src="https://m.xporty.com/images/landing/futbol_3.png" alt="Imagen de la Aplicación de Torneos">
+                <div class="card-content">
+                    <h3>Aplicación Gestion de Torneos</h3>
+                    <p class="description">
+                        Esta aplicación permite gestionar torneos de fútbol, facilitando la organización de equipos,
+                        partidos y resultados.
+                    <div class="more-text" style="display: none;">
+                        <span>
+                            Con un enfoque en la facilidad de uso, los administradores pueden crear torneos, agregar
+                            equipos y programar partidos.
+                            <br><br>
+                            <strong>Características:</strong>
+                            <ul>
+                                <li>Gestión de equipos y torneos.</li>
+                                <li>Programación de partidos y seguimiento de resultados.</li>
+                                <li>Interfaz intuitiva para usuarios y administradores.</li>
+                            </ul>
+                            <strong>Tecnologías utilizadas:</strong>
+                            <ul>
+                                <li>Python</li>
+                                <li>Flask</li>
+                                <li>PostgreSQL</li>
+                                <li>React</li>
+                            </ul>
+
+                            <strong>Demo:</strong>
+                            Podes ver la aplicación en <a href="https://link-a-la-aplicacion-de-torneos"
+                                target="_blank">Aplicación Gestion de Torneos</a>
+                        </span>
+                    </div>
+                    </p>
+                    <a href="https://github.com/tu-usuario-github/aplicacion-torneos" target="_blank">Ver en GitHub</a>
+                    <button class="ver-mas-btn" onclick="toggleDescription(this)">Ver más</button>
+                </div>
+            </div>
+            <!-- Agrega más proyectos según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Script "Ver más" -->
+
+    <script>
+        function toggleDescription(button) {
+            const cardContent = button.parentElement;
+            const moreText = cardContent.querySelector('.more-text');
+            const card = cardContent.closest('.card');
+            const imagePC = card.querySelector('.image-pc');
+            const imageMobile = card.querySelector('.image-mobile');
+
+            // Añadir o quitar la clase 'expanded' en el contenedor de la tarjeta
+
+            cardContent.classList.toggle('expanded');
+
+            if (cardContent.classList.contains('expanded')) {
+                moreText.style.display = 'inline'; // Muestra el texto adicional
+                button.textContent = 'Ver menos';
+                imagePC.style.display = 'none'; // Oculta la imagen de PC
+                imageMobile.style.display = 'block'; // Muestra la imagen móvil
+
+            } else {
+                moreText.style.display = 'none'; // Oculta el texto adicional
+                button.textContent = 'Ver más';
+                imagePC.style.display = 'block'; // Muestra la imagen de PC
+                imageMobile.style.display = 'none'; // Oculta la imagen móvil
+            }
+        }
+    </script>
+</body>
+</html>
