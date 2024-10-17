@@ -1,4 +1,4 @@
-# Portafolio de María Sol Graña
+# Portafolio
 
 ¡Hola! Soy Sol Graña, estudiante de Sistemas Informáticos en la UTN. Me apasiona la programación y el diseño de aplicaciones web. Este es mi portafolio donde muestro algunos de mis proyectos.
 
